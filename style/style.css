@@ -1,0 +1,686 @@
+a {
+    text-decoration: none;
+    font-family: 'Shantell Sans', cursive;
+    text-shadow: 0 0 2px #000;
+}
+p {
+    font-family: 'Neucha', cursive;
+    font-size: 22px;
+    color: chocolate;
+    text-shadow: 0 0 1px #000;
+}
+ul {
+    font-family: 'Neucha', cursive;
+    font-size: 22px;
+    list-style: circle;
+    color: chocolate;
+}
+
+h1, h2, h3 {
+    font-family: 'Shantell Sans', cursive;
+    text-shadow: 0 0 4px #000;
+}
+
+/* СТИЛИ КНОПОК */
+
+.butt {
+    font-family: 'Balsamiq Sans', cursive;
+    border: none;
+    font-size: 40px;
+    color: rgb(109, 80, 42);
+    height: 100px;
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(207, 166, 112);
+    box-shadow: 0 0 10px #3f2200;
+}
+
+
+/* ХЕДЕР НАВИГАЦИЯ  */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1400px 1fr;
+}
+
+.contact {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    grid-template-rows: repeat(2, 70px);
+    align-items: center;
+}
+.contact img {
+    width: 40px;
+}
+
+.telephone {
+    display: grid;
+    grid-template-columns: min-content min-content 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    gap: 30px;
+}
+.all-contact {
+    border-bottom: #a17e4a solid 3px;    
+    padding: 12px;
+}
+.all-contact p {
+    font-size: 38px;
+}
+
+.left-menu {
+    display: grid;
+    grid-template-columns: repeat(2, max-content) 1fr;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.main-menu-logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    height: 240px;
+    width: 220px;
+    align-self: baseline;
+    background: white url(../img/logo.png) center top no-repeat;
+    background-size: 200px;
+    cursor: pointer;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    box-shadow: 0 0 20px #fff, 0 0 20px rgb(153, 97, 97), inset 0 0 10px rgb(153, 97, 97);
+}
+
+.social-net {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, min-content);
+    align-items: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    gap: 30px;
+    justify-content: end;
+}
+.social-net > a {
+    justify-self: end;
+}
+
+.right-menu {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, max-content);
+    align-items: center;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-content: end;
+}
+.right-menu > a {
+    justify-self: end;
+}
+
+.nav-menu {
+    font-size: 20px;
+    gap: 60px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    color: chocolate;
+    text-transform: uppercase;
+}
+
+
+/* МЕЙН ГЛАВНАЯ СТРАНИЦА */
+
+.main-screen {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.main-screen-logo {
+    position: absolute;
+    width: 100vw;
+    height: 800px;
+    background: url(../img/main-back.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 70%;
+    box-shadow: 0 0 15px rgb(153, 97, 97), inset 0 0 20px #fff;
+}
+
+.main-screen-content {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: max-content;
+    text-align: center;
+    color: rgb(252, 154, 26);
+    padding-top: 50px;
+}
+
+.main-head {
+    font-size: 100px;
+    padding-bottom: 50px;
+}
+.main-desc {
+    font-size: 40px;
+    padding: 30px;
+    margin-bottom: 10px;
+    color: rgb(109, 80, 42);
+    background-color: rgba(211, 193, 170, 0.8);
+    border-radius: 200px;
+    box-shadow: 0 0 30px 20px rgba(211, 193, 170);
+}
+
+.submit-app {
+    margin-right: 15px;
+}
+
+/* БЛОК С МАСТЕР КЛАССАМИ */
+
+.head-2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #927140;
+    border-bottom: #927140 solid 3px;
+    border-top: #927140 solid 3px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.all-masters {
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.background-masters {
+    z-index: -1;
+    position: absolute;
+    height: 950px;
+    width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    opacity: 10%;
+}
+.back-master-class {
+    background: url(../img/back-master.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.select-masters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1400px;
+    justify-content: space-between;
+    margin-top: 60px;
+    row-gap: 50px;
+}
+
+.master {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 345px;
+    justify-content: space-between;
+}
+.img-master img {
+    width: 330px;
+}
+.img-master img[alt="Мастер-класс по акварели"] {
+    width: 390px;
+}
+.img-master img[alt="Гастро-вечер"] {
+    width: 350px;
+}
+.img-master {
+    height: 260px;
+    overflow: hidden;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px #3f2200;
+}
+.master .name-master {
+    flex-grow: 1;
+}
+.master .price-master {
+    font-weight: bold;
+}
+.add-master {
+    height: 250px;
+    width: 250px;
+    border: none;
+    font-size: 200px;
+    border-radius: 125px;
+    align-self: center;
+    color: bisque;
+    background-color: #f5f0f0;
+    justify-content: center;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+/* БЛОК ЛАВКИ */
+/* ЛАВКА ВЫБОРГСКАЯ ТРУБА */
+
+.our-range {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.sweet-shops,
+.eat-shops {
+    display: flex;
+    flex-direction: column;
+}
+.all-shops {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+}
+.background-shop {
+    position: absolute;
+    height: 800px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 10%;
+}
+.background-tube {
+    background: url(../img/back-tube.jpg) center top no-repeat;
+    background-size: cover;
+}
+.head-shop-main {
+    width: 1400px;
+}
+.shop,
+.about {
+    display: flex;
+    width: 1400px;
+    justify-content: space-between;
+    height: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.picture {
+    margin-top: 75px;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 0 0 15px #3f2200;
+}
+.tube-picture {
+    background: url(../img/tube-shop.jpg) center center no-repeat;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 700px;
+    align-items: center;
+}
+
+.head-3 {
+    font-size: 50px;
+    margin-bottom: 60px;
+    color: #e99312;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.head-tube {
+    margin-bottom: 30px;
+}
+
+.description p {
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+.tube-disc p {
+    margin-bottom: 0;
+}
+.follow-tube {
+    margin-top: 30px;
+}
+
+.description .butt {
+    margin-bottom: 20px;
+}
+
+
+/* ЛАВКА ВЫБОРГСКАЯ КАРАМЕЛЬ */
+
+.caramel-shop {
+    flex-direction: row-reverse;
+}
+.background-caramel {
+    background: url(../img/back-caramel.jpg) -250px -100px no-repeat;
+    background-size: cover;
+}
+
+.caramel-picture {
+    background: url(../img/caramel-shop.jpg) center center no-repeat;
+    border-top-right-radius: 300px;
+    border-top-left-radius: 0;
+}
+
+
+/* ПОНЧИКИ */
+
+.background-donats {
+    background: url(../img/back-donats.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.donats-picture {
+    background: url(../img/donats-shop.jpg) center center no-repeat;
+}
+
+
+/* СИРОВАРЕННАЯ ЛАВКА, ДАРЫ ВЫБОРГА*/
+
+.other-group {
+    height: 1100px;
+}
+
+.other-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 20%;
+    box-shadow: inset 0 0 50px 100px #fff;
+}
+.background-cheese {
+    background: url(../img/back-cheese.jpg) center center no-repeat;
+    background-size: cover;
+}
+.cheese-disc,
+.gifts-disc {
+    position: relative;
+    width: 650px;
+    overflow: hidden;
+}
+.other-group ul {
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    list-style-position: inside;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.other-group h3 {
+    text-align: center;
+}
+
+.other-button {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+}
+.head-cheese,
+.head-gifts {
+    height: 120px;
+}
+
+.background-gifts {
+    background: url(../img/back-gifts.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ЛАВКА ВОЛШЕБСТВА,ЗДОРОВАЯ ПИЩА "РАСТИ" */
+
+.magic-nature-shops {
+    margin-top: 50px;
+}
+
+.magic-disc {
+    position: relative;
+    width: 650px;
+    overflow: hidden;
+}
+.nature-disc {
+    position: relative;
+    width: 650px;
+    overflow: hidden;
+    height: 1050px;
+}
+
+.background-magic {
+    background: url(../img/back-magic.jpg) center top no-repeat;
+    background-size: 850px;
+}
+.background-nature {
+    background: url(../img/back-nature.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+.preview-pictures {
+    display: flex;
+    width: 650px;
+    justify-content:space-evenly;
+    margin-top: 40px;
+}
+.preview-pictures img {
+    width: 200px;
+}
+
+.preview-pictures a {
+    border-radius: 20px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #3f2200;
+}
+
+.magic-disc-text {
+    overflow: hidden;
+    height: 720px;
+}
+
+/* Для развертывания полного описания ЛАВКИ ВОЛШЕБСТВА */
+
+/* .full-disc .other-group {
+    height: 1750px;
+}
+.full-disc .magic-disc-text {
+    height: fit-content;
+} */
+
+
+
+/* МАСТЕРА И ХУДОЖНИКИ */
+
+.back-master-painter {
+    height: 2050px;
+    background: url(../img/back-master-painter.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 50%;
+    box-shadow: inset 0 0 100px 100px #fff;
+}
+
+.select-master-painter {
+    row-gap: 120px;
+}
+
+.select-master-painter .master {
+    width: 440px;
+    height: 945px;
+    justify-content: flex-start;
+}
+.select-master-painter .img-master {
+    width: 440px;
+    height: 470px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+.select-master-painter .img-master img {
+    width: 440px;
+}
+.master-darya .img-master img {
+    width: 495px;
+}
+.master-vika .img-master img {
+    margin-top: -60px;
+}
+.master-sabina .img-master img {
+    width: 450px;
+}
+
+.select-master-painter .master p {
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+
+.master-button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.master-button .butt{
+    height: 50px;
+    width: 135px;
+    font-size: 18px;
+}
+
+
+/* БЛОК О НАС */
+
+.back-about-as {
+    background: linear-gradient(45deg, #553018 25%, #b67950 50%, #553018 75%);
+    opacity: 100%;
+    box-shadow: inset 0 0 50px 100px #fff;
+    height: 1000px;
+}
+.about-as {
+    padding-bottom: 0;
+    height: 990px;
+}
+.about {
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.about-disc {
+    width: 1300px;
+}
+
+.about-disc p {
+    color: #eec5a9;
+    text-shadow: none;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+.town,
+.viborg {
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+
+/* ФУТЕР */
+
+footer {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    border-top: #927140 solid 3px;
+}
+
+.footer-list {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;    
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+}
+
+.footer-logo {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.name-footer {
+    width: 400px;
+}
+.footer-head-3 {
+    font-size: 30px;
+    margin: 0;
+    text-shadow: 0 0 2px #000;
+}
+
+.tel-email-footer {
+    display: flex;
+    flex-direction: column;
+}
+.tel-email-footer img {
+    width: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+.tel-email-footer a {
+    position: relative;
+    color: chocolate;
+    font-size: 25px;
+    padding-left: 35px;
+}
+
+.social-footer {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 10px;
+}
+.social-footer img {
+    width: 40px;
+}
+
+.reserved {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.reserved a {
+    color: chocolate;
+    font-size: 19px;
+    text-shadow: none;
+}
+.reserved p {
+    text-shadow: none;
+}
